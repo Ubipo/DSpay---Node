@@ -1,0 +1,8 @@
+{
+  "name": "name",
+  "description": "Digital payment system for lunch or printer cost at school or elsewhere.",
+  "repository": "https://github.com/Ubipo/DSpay-Node",
+  "logo": "http://ubipo.net/logo.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
