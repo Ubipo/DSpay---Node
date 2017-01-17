@@ -35,7 +35,7 @@ app.get('/times', function(request, response) {
   response.send(result);
 });
 
-app.get('/db', function (request, response) {
+app.get('/gbn', function (request, response) {
   knex.select().from('test_table')
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     .then(function(err, result) {
