@@ -2,6 +2,13 @@ var cool = require('cool-ascii-faces');
 var express = require('express');
 var app = express();
 var pg = require('pg');
+var knex = require('knex')({
+  client: 'pg',
+  connection: {
+    host : 'process.env.DATABASE_URL',
+    database : 'dspay'
+  }
+});
 
 app.set('port', (process.env.PORT || 5000));
 
